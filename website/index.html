@@ -4,14 +4,25 @@
         <title>2Bar</title>
         <link rel="stylesheet" href="style.css">
         <script src="2bar.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <article>
             <h1>2Bar</h1>
             <hr>
-            <p>An experimental project that exploits an SVG filter rendering behavior in Chromium-based browsers to visually duplicate the bookmark toolbar using CSS.</p>
+            <p>An experimental project that exploits an SVG filter rendering behavior in Chromium-based browsers to visually duplicate the bookmark toolbar using CSS.<br>Uses JavaScript for initialization and customization.</p>
             <span id="c">Copyright &copy; 2026 <a href="https://justdeveloper.is-a.dev/" target="_blank">JustDeveloper</a></span>
             <a href="https://github.com/JustDeveloper1/2Bar" target="_blank">GitHub Repo</a>
+            <section>
+                <h2>Installation and usage</h2><br>
+                <a href="https://www.npmjs.com/package/2bar" target="_blank">NPM Package</a>
+                <br><br>
+                <span>HTML:</span>
+                <pre>&lt;<span style="color: #7cacf8;">script</span> <span style="color: #a8c7fa;">src</span>=<span style="color: #fe8d59;">"https://unpkg.com/2bar"</span>&gt;&lt;/<span style="color: #7cacf8;">script</span>&gt;</pre>
+                <br>
+                <span>JavaScript: <small>function argument 0: options <pre>{id?: string, class1?: string, class2?: string}</pre> (optional)</small></span>
+                <pre><span style="color: #7cacf8;">window</span>[<span style="color: #fe8d59;">'2Bar'</span>].<span style="color: #bf67ff;">spawn</span>();</pre>
+            </section>
         </article>
         <script defer>
             window['2Bar'].spawn();

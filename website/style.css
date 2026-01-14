@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-*:not(html):not(body):not(article):not(span a) {
+*:not(html):not(body):not(article):not(span a):not(section *) {
     position: fixed;
     top: 50%;
     width: 100%;
@@ -24,12 +24,46 @@ p {
 span {
     top: 0px !important;
 }
-a:not(span a) {
+a:not(span a):not(section a), section {
     top: 100% !important;
     translate: 0% calc(-100% - 10px);
+}
+section {
+    translate: -1px calc(-100% - 40px);
+    height: calc(30vh - 50px);
+    background: #282828;
+    border: 2px solid #5e5e5e;
+    padding-block: 20px;
+}
+section * {
+    text-align: left;
+    position: relative;
+    display: inline;
+}
+pre:not(span pre), section span:not(pre span) {
+    display: block;
+    margin-left: 10px;
+}
+pre {
+    background-color: #3c3c3c;
+    width: max-content;
+}
+pre:not(span pre) {
+    padding: 20px;
 }
 
 html {
     background: white;
     transition: 1s ease-in-out;
+}
+
+@media screen and (max-height: 943px) {
+    section {
+        display: none;
+    }
+}
+@media screen and (max-width: 821px) {
+    section {
+        display: none;
+    }
 }
