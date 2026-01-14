@@ -38,8 +38,9 @@ SOFTWARE.
     "use strict";
     if (typeof module === 'object' && module.exports) throw new Error('2Bar: Invalid environment.');
 
-    let id = '2Bar';
-    let cl = '2Bar';
+    let id = '__2Bar__';
+    let cl = '__2Bar__';
+    let c2 = '__SBar__';
     const i = ' !important';
     let initialized = false;
 
@@ -47,7 +48,7 @@ SOFTWARE.
         <defs>
             <filter id="${typeof ID == 'string' ? ID : (()=>{
                 throw new Error('2Bar: Invalid id input.');
-            })()}" x="0%" y="00%" width="100%" height="100%">
+            })()}" x="0%" y="0%" width="20%" height="100%">
                 <feDisplacementMap in="SourceGraphic" scale="300" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
             </filter>
         </defs>
@@ -55,22 +56,31 @@ SOFTWARE.
     const filter = document.createElement('div');
     filter.innerHTML = svg();
 
-    const css = (class_ = cl) => `
+    const css = (class_ = cl, class2 = c2) => `
         div[class="${typeof class_ == 'string' ? class_ : (()=>{
             throw new Error('2Bar: Invalid class input.');
+        })()}"], div[class="${typeof class2 == 'string' ? class2 : (()=>{
+            throw new Error('2Bar: Invalid second class input.');
         })()}"] {
             position: fixed${i};
             top: 0px${i};
             width: 100%${i};
             transform: rotateZ(90deg)${i};
-            height: 80vw${i};
+            height: 100vw${i};
             backdrop-filter: url(#${id})${i};
             -webkit-backdrop-filter: url(#${id})${i};
             z-index: calc(999 * 999 * 999 * 999 * 999)${i};
-            translate: 0% -10%${i};
-            mask-image: linear-gradient(90deg, black 29%, transparent 29%)${i};
-            -webkit-mask-image: linear-gradient(90deg, black 29%, transparent 29%)${i};
+            translate: calc(20% - 1px) -10%${i};
+            mask-image: linear-gradient(90deg, black 20%, transparent 20%)${i};
+            -webkit-mask-image: linear-gradient(90deg, black 20%, transparent 20%)${i};
             pointer-events: none${i};
+        }
+        div[class="${class2}"] {
+            translate: -10% -10%${i};
+            transform: rotateZ(360deg)${i};
+            mask-image: linear-gradient(180deg, black 20%, transparent 20%), linear-gradient(180deg, black 20%, transparent 20% 20%)${i};
+            -webkit-mask-image: linear-gradient(180deg, black 20%, transparent 20%), linear-gradient(180deg, black 20%, transparent 20% 20%)${i};
+            width: 200%${i};
         }
     `;
     const style = document.createElement('style');
@@ -102,18 +112,20 @@ SOFTWARE.
 
                         const opts = {
                             id,
-                            cl,
+                            class1: cl,
+                            class2: c2,
                             ...options
                         };
-                        [id, cl] = [opts.id, opts.cl];
+                        [id, cl, c2] = [opts.id, opts.class1, opts.class2];
                         const main = document.createElement('div');
                         const side = document.createElement('div');
                         main.className = cl;
+                        side.className = c2;
 
-                        update(svg(id), css(cl));
-                        document.body.appendChild(main);
+                        update(svg(id), css(cl, c2));
+                        document.body.append(main, side);
 
-                        return main;
+                        return [main, side];
                     }
                 },
                 set['spawn'](any) {
