@@ -41,6 +41,7 @@ SOFTWARE.
     let id = '2Bar';
     let cl = '2Bar';
     const i = ' !important';
+    let initialized = false;
 
     const svg = (ID = id) => `<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;overflow:hidden;">
         <defs>
@@ -80,9 +81,6 @@ SOFTWARE.
         style.innerHTML = CSS;
     }
 
-    document.head.appendChild(style);
-    document.body.appendChild(filter);
-
     function redefine(what) {
         throw new Error(`2Bar: Attempt to redefine window['2Bar']${
             what ? '.' + what : ''
@@ -93,6 +91,12 @@ SOFTWARE.
         get: () => {
             return {
                 get['spawn']() {
+                    if (!initialized) {
+                        initialized = true;
+                        
+                        document.head.appendChild(style);
+                        document.body.appendChild(filter);
+                    }
                     return function spawn(options = {}) {
                         if (typeof options != 'object') throw new Error('2Bar: Invalid options input.');
 
