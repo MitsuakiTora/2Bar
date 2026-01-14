@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-*:not(html):not(body):not(article) {
+*:not(html):not(body):not(article):not(span a) {
     position: fixed;
     top: 50%;
     width: 100%;
@@ -23,6 +23,10 @@ p {
 }
 span {
     top: 0px !important;
+}
+a:not(span a) {
+    top: 100% !important;
+    translate: 0% calc(-100% - 10px);
 }
 
 html {
