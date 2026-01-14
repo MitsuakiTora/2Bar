@@ -17,6 +17,19 @@
             window['2Bar'].spawn();
             setTimeout(()=>document.documentElement.style.background = '#3c3c3c', 10);
             document.getElementById('c').onclick=()=>window.open('https://justdeveloper.is-a.dev/', '_blank');
+
+            function isChromium() {
+                if (navigator.userAgentData) {
+                    const brands = navigator.userAgentData.brands;
+                    for (const brand_version_pair of brands) {
+                        if (brand_version_pair.brand === "Chromium") {
+                            return true;
+                        }
+                    }
+                }
+                return navigator.userAgent.includes("Chrome") || navigator.userAgent.includes("Chromium");
+            }
+            if (!isChromium()) alert('Unsupported browser. This project only supports Chromium-based browsers. You may not see any visual effects.');
         </script>
     </body>
 </html>
