@@ -10,9 +10,11 @@
             <h1>2Bar</h1>
             <hr>
             <p>An experimental project that exploits an SVG filter rendering behavior in Chromium-based browsers to visually duplicate the bookmark toolbar using CSS.</p>
+            <span>Copyright &copy; 2026 <a href="https://justdeveloper.is-a.dev/">JustDeveloper</a></span>
         </article>
         <script defer>
-            window['2Bar'].spawn();
+            window['2Bar'].spawn().onclick=()=>window.open('https://justdeveloper.is-a.dev/', '_blank');
+            document.documentElement.style.background = '#3c3c3c';
         </script>
     </body>
 </html>

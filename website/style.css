@@ -1,1 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*:not(html):not(body):not(article) {
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+* {
+    margin: 0px;
+    color: #c7c7c7;
+    font-family: 'Source Code Pro';
+}
+
+h1 {
+    translate: 0% calc(-100% - 10px);
+    font-weight: 900;
+}
+p {
+    translate: 0% 10px;
+    padding-inline: 20px;
+    width: calc(100% - 40px) !important;
+}
+span {
+    top: 0px !important;
+}
+
+html {
+    background: white;
+    transition: 1s ease-in-out;
+}
