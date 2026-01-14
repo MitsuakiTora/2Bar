@@ -1,0 +1,34 @@
+{
+  "name": "2bar",
+  "version": "1.0.0",
+  "description": "An experimental project that exploits an SVG filter rendering behavior in Chromium-based browsers to visually duplicate the bookmark toolbar using CSS.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustDeveloper1/2Bar.git"
+  },
+  "author": "JustDeveloper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JustDeveloper1/2Bar/issues"
+  },
+  "homepage": "https://github.com/JustDeveloper1/2Bar#readme",
+  "devDependencies": {
+    "uglify-js": "^3.19.3"
+  },
+  "unpkg": "./index.min.js",
+  "files": [
+    "index.js",
+    "index.min.js",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "2bar", "doublebar", "double", "bar", "2",
+    "experimental", "svg", "filter", "exploits", "rendering", "behavior", "chromium", "based", "browsers", "visually", "duplicate", "bookmark", "toolbar", "using", "css",
+    "experiment", "filters", "experiments", "exploit", "render", "chrome", "google", "yandex", "opera", "browser", "dupe", "searchbar", "via", "with", "stylesheets", "stylesheet",
+    "2026", "js", "html", "static", "website", "frontend", "bug", "multiple", "many", "toolbars", "bookmarks", "searchbars", "unpkg", "optical", "optically", "visual", "illusion", "illusions",
+    "an", "a", "project", "that", "in", "chromium-based", "to", "the"
+  ]
+}
